@@ -1,0 +1,48 @@
+
+   ErrorException 
+
+  file_put_contents(C:\staj\blog\app/Http/Controllers/Route::get('/kullanici/oturumac','KullaniciController@giris_form')-;.php): failed to open stream: No such file or directory
+
+  at C:\staj\blog\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php:135
+    131|      * @return int|bool
+    132|      */
+    133|     public function put($path, $contents, $lock = false)
+    134|     {
+  > 135|         return file_put_contents($path, $contents, $lock ? LOCK_EX : 0);
+    136|     }
+    137| 
+    138|     /**
+    139|      * Write the contents of a file, replacing it atomically if it already exists.
+
+  • Database name seems incorrect: You're using the default database name `laravel`. This database does not exist.
+    
+    Edit the `.env` file and use the correct database name in the `DB_DATABASE` key. 
+    https://laravel.com/docs/master/database#configuration
+
+  1   C:\staj\blog\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php:135
+      file_put_contents("C:\staj\blog\app/Http/Controllers/Route::get('/kullanici/oturumac','KullaniciController@giris_form')-;.php", "<?php
+
+namespace App\Http\Controllers\Route::get('\kullanici;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class oturumac','KullaniciController@giris_form')-; extends Controller
+{
+    //
+}
+")
+
+  2   C:\staj\blog\vendor\laravel\framework\src\Illuminate\Console\GeneratorCommand.php:159
+      Illuminate\Filesystem\Filesystem::put("C:\staj\blog\app/Http/Controllers/Route::get('/kullanici/oturumac','KullaniciController@giris_form')-;.php", "<?php
+
+namespace App\Http\Controllers\Route::get('\kullanici;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class oturumac','KullaniciController@giris_form')-; extends Controller
+{
+    //
+}
+")
